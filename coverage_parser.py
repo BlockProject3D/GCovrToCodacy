@@ -101,3 +101,6 @@ class GCovrReport:
         return (obj)
 
 report = GCovrReport(sys.argv[1])
+ptoken = sys.argv[2]
+commit = sys.argv[3]
+sendToCodacy(commit, ptoken, report.genFinalJSON())
